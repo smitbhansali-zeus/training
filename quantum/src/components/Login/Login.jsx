@@ -13,7 +13,7 @@ const Login = () => {
             <div className='login-form'>
                 <div className='form-head'>
                     <img src={backicon} alt="backicon" width={17} />
-                    <p style={{ fontSize: '24px', margin: '0px auto', color: 'rgba(34, 34, 34, 1)' }}>
+                    <p className='heading'>
                         <b>Log in with Quantum</b>
                     </p>
                 </div>

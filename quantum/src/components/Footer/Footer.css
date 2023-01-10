@@ -14,9 +14,17 @@
   align-items: center;
 }
 .copyright {
-  width: 35%;
+  width: 40%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  font-size: 14px;
+  color: rgba(97, 97, 97, 1);
+}
+@media screen and (max-width: 769px) {
+  .copyright {
+    width: 60%;
+    font-size: 10px;
+  }
 }

@@ -15,9 +15,9 @@ const Footer = () => {
                 </p>
             </div>
             <div className='copyright'>
-                <img src={logo} alt="logo" width={100} />
+                <img src={logo} alt="logo" />
                 <p style={{ fontSize: '20px', color: 'rgba(0,0,0,0.12)' }}>|</p>
-                <p style={{ fontSize: '14px', color: 'rgba(97,97,97,1)' }}>
+                <p>
                     Copyright Ⓒ 2020-2021 <b>Zeus Systems Pvt. Ltd.</b>  All rights reserved.
                 </p>
             </div>

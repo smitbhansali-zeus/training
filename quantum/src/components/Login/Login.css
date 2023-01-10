@@ -19,6 +19,11 @@
   justify-content: flex-start;
   margin-bottom: 34px;
 }
+.heading {
+  font-size: 24px;
+  margin: 0px auto;
+  color: rgba(34, 34, 34, 1);
+}
 .form-radio {
   display: flex;
   flex-direction: row;
@@ -66,4 +71,16 @@
   border: none;
   border-radius: 3px;
   font-size: 14px;
+}
+@media screen and (max-width: 769px) {
+  .heading {
+    font-size: 20px;
+  }
+  .radiobtn {
+    margin-right: 5px;
+  }
+  .radiotext {
+    font-size: 12px;
+    margin-right: 15px;
+  }
 }
