@@ -1,0 +1,69 @@
+.login-body {
+  background-color: rgba(238, 238, 238, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login-form {
+  margin-top: 60px;
+  margin-bottom: 66px;
+  width: 35%;
+  background-color: white;
+  border-top: 4px solid rgba(58, 199, 236, 1);
+  border-radius: 3px;
+  padding: 20px 32px;
+}
+.form-head {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-bottom: 34px;
+}
+.form-radio {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-bottom: 23px;
+}
+.radiobtn {
+  margin-right: 8px;
+}
+.radiotext {
+  font-size: 16px;
+  margin-right: 32px;
+}
+.form-dropdown {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  margin-bottom: 36px;
+}
+.form-input {
+  margin-top: 54px;
+}
+.form-input-field {
+  width: 100%;
+  font-size: 16px;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  outline: none;
+}
+.form-checkbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-bottom: 23px;
+}
+.checkboxbtn {
+  margin-right: 5px;
+}
+.checkboxtext {
+  font-size: 16px;
+  margin-right: 32px;
+}
+.login-submit {
+  background: rgba(63, 210, 139, 1) 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.24);
+  padding: 11px 84px;
+  border: none;
+  border-radius: 3px;
+  font-size: 14px;
+}
