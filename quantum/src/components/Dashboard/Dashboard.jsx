@@ -49,6 +49,10 @@ const Dashboard = () => {
             </div>
             <div className='cardscc'>
                 <div className='card'>
+                    <div>
+                        <p>
+                        </p>
+                    </div>
                     <div className='card-details'>
                         <div className='card-img'>
                             <img src={class1img} alt="class1img" width={`70%`} />
@@ -91,6 +95,10 @@ const Dashboard = () => {
                     </div>
                 </div>
                 <div className='card'>
+                    <div>
+                        <p>
+                        </p>
+                    </div>
                     <div className='card-details'>
                         <div className='card-img'>
                             <img src={class2img} alt="class2img" width={`70%`} />
@@ -133,6 +141,10 @@ const Dashboard = () => {
                     </div>
                 </div>
                 <div className='card'>
+                    <div>
+                        <p>
+                        </p>
+                    </div>
                     <div className='card-details'>
                         <div className='card-img'>
                             <img src={class3img} alt="class3img" width={`70%`} />
@@ -175,6 +187,11 @@ const Dashboard = () => {
                     </div>
                 </div>
                 <div className='card'>
+                    <div className='c-expire'>
+                        <p>
+                            EXPIRED
+                        </p>
+                    </div>
                     <div className='card-details'>
                         <div className='card-img'>
                             <img src={class4img} alt="class4img" width={`70%`} />

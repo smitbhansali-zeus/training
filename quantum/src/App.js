@@ -4,6 +4,7 @@ import Dashboard from './components/Dashboard/Dashboard.jsx'
 import Navbar from './components/Navbar/Navbar.jsx'
 import Footer from './components/Footer/Footer.jsx'
 import Login from './components/Login/Login.jsx'
+import Header from './components/Header/Header.jsx'
 import { createBrowserRouter, RouterProvider, Route } from "react-router-dom";
 
 function App() {
@@ -12,7 +13,7 @@ function App() {
       path: '/',
       element: (
         <div>
-          <Navbar></Navbar>
+          <Header></Header>
           <Dashboard></Dashboard>
           <Footer></Footer>
         </div>
