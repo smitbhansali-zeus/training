@@ -1,103 +1,82 @@
+@import "../../scss-variable/variables";
 .login-body {
-  background-color: rgb(238, 238, 238);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background-color: rgba(238, 238, 238, 1);
+  @include flexCenterCenter();
 }
-
 .login-form {
   margin-top: 60px;
   margin-bottom: 66px;
   width: 35%;
   background-color: white;
-  border-top: 4px solid rgb(58, 199, 236);
+  border-top: 4px solid rgba(58, 199, 236, 1);
   border-radius: 3px;
   padding: 20px 32px;
 }
-
 .form-head {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+  @include flexStartCenter();
   flex-direction: row;
   margin-bottom: 34px;
 }
-
 .heading {
-  font-size: 24px;
+  font-size: $_24pxfont;
   margin: 0px auto;
-  color: rgb(34, 34, 34);
+  color: $darktextcolor;
 }
-
 .form-radio {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+  @include flexStartCenter();
   flex-direction: row;
   margin-bottom: 23px;
 }
-
 .radiobtn {
   margin-right: 8px;
 }
-
 .radiotext {
-  font-size: 16px;
+  font-size: $_16pxfont;
   margin-right: 32px;
 }
-
 .form-dropdown {
   border-bottom: 1px solid rgba(0, 0, 0, 0.12);
   margin-bottom: 36px;
 }
-
 .form-input {
   margin-top: 54px;
 }
-
 .form-input-field {
   width: 100%;
-  font-size: 16px;
+  font-size: $_16pxfont;
   border: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0.12);
   outline: none;
 }
-
 .form-checkbox {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+  @include flexStartCenter();
   flex-direction: row;
   margin-bottom: 23px;
 }
-
 .checkboxbtn {
   margin-right: 5px;
 }
-
 .checkboxtext {
-  font-size: 16px;
+  font-size: $_16pxfont;
   margin-right: 32px;
 }
-
 .login-submit {
-  background: rgb(63, 210, 139) 0% 0% no-repeat padding-box;
+  background: rgba(63, 210, 139, 1) 0% 0% no-repeat padding-box;
   box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.24);
   padding: 11px 84px;
   border: none;
   border-radius: 3px;
-  font-size: 14px;
+  font-size: $_14pxfont;
 }
-
 @media screen and (max-width: 769px) {
   .heading {
-    font-size: 20px;
+    font-size: $_20pxfont;
   }
   .radiobtn {
     margin-right: 5px;
   }
   .radiotext {
-    font-size: 12px;
+    font-size: $_12pxfont;
     margin-right: 15px;
   }
-}/*# sourceMappingURL=Login.css.map */
+}

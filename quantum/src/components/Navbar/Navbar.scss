@@ -1,0 +1,22 @@
+@import "../../scss-variable/variables";
+.navbar-body {
+  background-image: linear-gradient(
+      rgba(37, 49, 63, 0.5),
+      rgba(37, 49, 63, 0.5)
+    ),
+    url("../../assets/headerpatternimage.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 1;
+  box-shadow: inset 0px -3px 0 0px rgb(49 185 228);
+}
+.navbar-logo {
+  width: 10%;
+  padding: 20px 50px;
+}
+@media screen and (max-width: 769px) {
+  .navbar-logo {
+    width: 30%;
+    padding: 20px 50px;
+  }
+}

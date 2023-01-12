@@ -1,0 +1,25 @@
+@import "../../scss-variable/variables";
+.footer-body {
+  background-color: rgba(224, 225, 225, 1);
+  @include flexCenterCenter();
+  flex-direction: column;
+}
+.footer-links {
+  margin-top: -45px;
+  width: 130px;
+  @include flexSpaceAroundCenter();
+  flex-direction: row;
+}
+.copyright {
+  width: 40%;
+  @include flexSpaceAroundCenter();
+  flex-direction: row;
+  font-size: $_14pxfont;
+  color: rgba(97, 97, 97, 1);
+}
+@media screen and (max-width: 769px) {
+  .copyright {
+    width: 60%;
+    font-size: $_10pxfont;
+  }
+}

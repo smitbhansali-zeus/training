@@ -1,51 +1,41 @@
+@import "../../scss-variable/variables";
+
 .db-body {
-  background-color: rgb(238, 238, 238);
+  background-color: rgba(238, 238, 238, 1);
   padding: 50px 150px;
 }
-
 .cc {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 64px;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
-  background-color: rgb(141, 220, 151);
+  background-color: $ccbgcolor;
   padding-top: 20px;
 }
-
 .course {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flexCenterCenter();
   flex-direction: row;
-  border-bottom: 4px solid rgb(34, 34, 34);
+  border-bottom: 4px solid $darktextcolor;
   padding-bottom: 20px;
 }
-
 .coursenumber > b {
-  font-size: 24px;
+  font-size: $_24pxfont;
 }
-
 .coursenumber {
-  font-size: 16px;
+  font-size: $_16pxfont;
 }
-
 .class {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flexCenterCenter();
   flex-direction: row;
   padding-bottom: 20px;
 }
-
 .classnumber > b {
-  font-size: 24px;
+  font-size: $_24pxfont;
 }
-
 .classnumber {
-  font-size: 16px;
+  font-size: $_16pxfont;
 }
-
 .sortcc {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -55,47 +45,33 @@
   padding-top: 20px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.12);
 }
-
 .totcc {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  color: rgb(102, 102, 102);
-  font-size: 12px;
+  @include flexStartCenter();
+  color: $lighttextcolor;
+  font-size: $_12pxfont;
 }
-
 .sort {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
+  @include flexEndCenter();
 }
-
 .sortby {
-  font-size: 12px;
-  color: rgb(102, 102, 102);
+  font-size: $_12pxfont;
+  color: $lighttextcolor;
 }
-
 .sortbycc {
   margin-left: 5px;
   width: 170px;
   height: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-size: 16px;
-  color: rgb(51, 51, 51);
+  @include flexSpaceBetweenCenter();
+  font-size: $_16pxfont;
+  color: $textcolor;
   border-bottom: 1px solid rgba(0, 0, 0, 0.12);
 }
-
 .cardscc {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  @include flexSpaceBetweenCenter();
   flex-direction: row;
   flex-wrap: wrap;
   margin-bottom: 50px;
 }
-
 .card {
   display: grid;
   grid-template-columns: 1fr;
@@ -108,7 +84,6 @@
   padding: 20px 10px;
   margin-top: 20px;
 }
-
 .card-details {
   display: grid;
   grid-template-columns: 1fr 1.5fr;
@@ -117,81 +92,60 @@
   grid-row-gap: 0px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.12);
 }
-
 .card-img {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flexCenterCenter();
 }
-
 .card-info {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   width: 100%;
 }
-
 .card-name {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  @include flexSpaceBetweenCenter();
   flex-direction: row;
   font-size: 20px;
-  color: rgb(34, 34, 34);
+  color: rgba(34, 34, 34, 1);
 }
-
 .card-subject {
-  font-size: 12px;
-  color: rgb(102, 102, 102);
+  font-size: $_12pxfont;
+  color: $lighttextcolor;
 }
-
 .card-chapters {
-  font-size: 12px;
-  color: rgb(102, 102, 102);
+  font-size: $_12pxfont;
+  color: $lighttextcolor;
 }
-
 .card-dd {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  @include flexSpaceBetweenCenter();
   border-bottom: 1px solid rgba(0, 0, 0, 0.12);
 }
-
 .card-date {
-  font-size: 12px;
-  color: rgb(102, 102, 102);
+  font-size: $_12pxfont;
+  color: $lighttextcolor;
 }
-
 .card-links {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  @include flexSpaceEvenlyCenter();
   margin: 10px;
   padding: 10px;
 }
-
 .c-expire {
-  background-color: rgb(255, 228, 230);
-  color: rgb(216, 0, 0);
-  font-size: 10px;
+  background-color: rgba(255, 228, 230, 1);
+  color: rgba(216, 0, 0, 1);
+  font-size: $_10pxfont;
   width: 7%;
   height: 15px;
   margin-top: -20px;
   margin-left: -10px;
 }
-
 .c-expire > p {
   margin: 0px;
   padding: 1.5px 3px;
 }
-
 @media screen and (max-width: 769px) {
   .db-body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flexCenterCenter();
     flex-direction: column;
-    background-color: rgb(238, 238, 238);
+    background-color: rgba(238, 238, 238, 1);
     padding: 50px 0px;
   }
   .cc {
@@ -209,4 +163,4 @@
   .c-expire {
     width: 8%;
   }
-}/*# sourceMappingURL=Dashboard.css.map */
+}
