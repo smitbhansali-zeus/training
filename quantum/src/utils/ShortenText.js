@@ -1,0 +1,1 @@
+export const ShortenText = (address) => `${address.slice(0, 50)}...`

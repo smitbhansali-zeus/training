@@ -1,0 +1,63 @@
+import class1img from '../../assets/imageMask-1.svg'
+import class2img from '../../assets/imageMask-2.svg'
+import class3img from '../../assets/imageMask.svg'
+import class4img from '../../assets/imageMask-3.svg'
+
+export const data = [
+    {
+        "id": 1,
+        "expire": "",
+        "image": class1img,
+        "name": "Acceleration",
+        "subject": "Physics | Grade 7 ",
+        "subjectub": "+2",
+        "units": 4,
+        "lessons": 18,
+        "topics": 24,
+        "teacher": "Mr. Frank's Class B",
+        "students": 50,
+        "date": "21-Jan-2020 - 21-Aug-2020",
+    },
+    {
+        "id": 2,
+        "expire": "",
+        "image": class2img,
+        "name": "Displacement, Velocity and Speed",
+        "subject": "Physics 2 | Grade 6 ",
+        "subjectub": "+3",
+        "units": 2,
+        "lessons": 15,
+        "topics": 20,
+        "teacher": "No Classes",
+        "students": 0,
+        "date": "",
+    },
+    {
+        "id": 3,
+        "expire": "",
+        "image": class3img,
+        "name": "Introduction to Biology: Microorganisms and how they affect",
+        "subject": "Biology | Grade 4 ",
+        "subjectub": "+1",
+        "units": 5,
+        "lessons": 16,
+        "topics": 22,
+        "teacher": "All Classes",
+        "students": 300,
+        "date": "",
+    },
+    {
+        "id": 4,
+        "expire": "EXPIRED",
+        "image": class4img,
+        "name": "Introduction to High School Mathematics",
+        "subject": "Mathematics | Grade 8 ",
+        "subjectub": "+3",
+        "units": 0,
+        "lessons": 0,
+        "topics": 0,
+        "teacher": "Mr. Frank's Class A",
+        "students": 44,
+        "date": "14-Oct-2019 - 20-Oct-2020",
+    },
+]
