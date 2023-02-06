@@ -1,0 +1,24 @@
+<div class="login-form">
+    <form class="login">
+        <div class="form-header">
+            Log in
+        </div>
+        <mat-form-field appearance="fill" class="email-field">
+            <mat-label>Email</mat-label>
+            <input type="email" matInput required>
+            <mat-hint align="end" class="email-forgot">FORGOT EMAIL ID?</mat-hint>
+        </mat-form-field>
+        <mat-form-field appearance="fill" class="password-field">
+            <mat-label>Password</mat-label>
+            <input matInput [type]="hide ? 'password' : 'text'" required>
+            <button class="preview-btn" type="button" mat-icon-button matSuffix (click)="vischange()">
+                <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+            </button>
+            <mat-hint align="end" class="password-forgot">FORGOT PASSWORD?</mat-hint>
+        </mat-form-field>
+        <mat-checkbox class="remember-me">Remember Me</mat-checkbox>
+        <button type="submit" mat-raised-button color="primary" class="login-btn">LOG IN</button>
+        <div class="no-account">Not registered yet?</div>
+        <div class="create-account-div"><a routerLink="/signup" class="create-account">CREATE AN ACCOUNT</a></div>
+    </form>
+</div>

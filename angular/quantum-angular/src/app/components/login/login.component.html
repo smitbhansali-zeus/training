@@ -1,46 +1,5 @@
-<div class="login-body">
-    <div class="navbar">
-        <div class="navbar-logo">
-            <img src="../../../assets/headerlogo.svg" alt="quantum logo">
-        </div>
-    </div>
-    <form class="login-form">
-        <div class="heading-form">
-            Log in
-        </div>
-        <div class="email-input">
-            <input type="email" placeholder="Email ID*">
-            <div class="forgot-email">
-                FORGOT EMAIL ID?
-            </div>
-        </div>
-        <div class="password-input">
-            <div class="input-area">
-                <input type="password" placeholder="Password*">
-                <img class="preview" src="../../../assets/preview.svg" alt="preview">
-            </div>
-            <div class="forgot-password">
-                FORGOT PASSWORD?
-            </div>
-        </div>
-        <div class="remember-me">
-            <img src="../../../assets/checkbox-checked.svg" alt="checkbox-checked">
-            Remember Me
-        </div>
-        <div>
-            <button class="login-button" type="submit">
-                LOG IN
-            </button>
-        </div>
-        <div class="no-account">
-            Not registered yet?
-        </div>
-        <div class="create-account">
-            <a routerLink="/signup" routerLinkActive="active" ariaCurrentWhenActive="page">CREATE AN ACCOUNT</a>
-        </div>
-    </form>
-    <div class="contact">
-        About <span style="color: rgba(0, 0, 0, 0.12);">|</span> Contact Us
-    </div>
+<div class="login">
+    <app-navbar></app-navbar>
+    <app-login-form></app-login-form>
+    <app-footer></app-footer>
 </div>
-<router-outlet></router-outlet>

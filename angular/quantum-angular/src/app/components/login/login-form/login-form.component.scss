@@ -1,0 +1,73 @@
+.login-form {
+  background-color: rgba(238, 238, 238, 1);
+  display: flex;
+  justify-content: center;
+}
+
+.login {
+  background-color: rgba(255, 255, 255, 1);
+  width: 41.4%;
+  margin-top: 145px;
+  border-top: solid 4px rgba(58, 199, 236, 1);
+  border-radius: 2px;
+  padding: 24px 32px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  max-width: 424px;
+}
+
+.form-header {
+  color: rgba(34, 34, 34, 1);
+  font-size: 24px;
+}
+
+.email-field,
+.password-field {
+  width: 100%;
+  margin: 32px 0px 0px 0px;
+  font-size: 16px;
+}
+
+.email-forgot,
+.password-forgot {
+  font-size: 14px;
+  color: rgba(31, 122, 84, 1);
+  cursor: pointer;
+}
+
+.preview-btn {
+  border: none;
+  padding: 0px;
+  background-color: inherit;
+  color: rgba(31, 122, 84, 1);
+}
+
+.remember-me {
+  margin-top: 8px;
+  width: 100%;
+  font-size: 16px;
+}
+
+.login-btn {
+  font-size: 14px;
+  margin-top: 36px;
+}
+
+.no-account {
+  font-size: 12px;
+  color: rgba(34, 34, 34, 1);
+  margin-top: 24px;
+}
+
+.create-account-div {
+  margin-top: 4px;
+}
+
+.create-account {
+  text-decoration: none;
+  color: rgba(31, 122, 84, 1);
+  font-size: 14px;
+  cursor: pointer;
+}
