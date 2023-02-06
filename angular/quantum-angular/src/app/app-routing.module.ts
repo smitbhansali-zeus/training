@@ -5,13 +5,13 @@ import { LoginFormComponent } from './login-form/login-form.component';
 import { RegisterComponent } from './register/register.component';
 
 const routes: Routes = [
-  {path: "" , component:LoginFormComponent},
-  {path:"register", component:RegisterComponent},
-  {path:"dashboard", component:DashboardComponent},
+  { path: '', component: LoginFormComponent },
+  { path: 'register', component: RegisterComponent },
+  { path: 'dashboard', component: DashboardComponent },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

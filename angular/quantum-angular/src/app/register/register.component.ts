@@ -8,14 +8,11 @@ import { Personal_info } from '../register';
   styleUrls: ['./register.component.scss'],
   providers: [],
 })
-
-
 export class RegisterComponent {
-  img:string="../assets/img/Zeus-LMS-logo.svg";
+  img: string = '../assets/img/Zeus-LMS-logo.svg';
   personal_info: Personal_info;
   months: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
   panelOpenState = false;
-
 
   firstFormGroup = this._formBuilder.group({
     firstname: ['', Validators.required],
@@ -31,7 +28,6 @@ export class RegisterComponent {
     Software_Quality_Engineer: false,
     update: false,
   });
-
 
   secondFormGroup = this._formBuilder.group({
     percentage: ['', Validators.required],
@@ -50,22 +46,17 @@ export class RegisterComponent {
     Others: false,
   });
 
-
   thirdFormGroup = this._formBuilder.group({});
 
-
   constructor(private _formBuilder: FormBuilder) {}
-
 
   personal: string;
   appear: boolean;
   Notice: boolean;
 
-
   Change(e: any) {
     this.personal = e.value;
   }
-
 
   appeared(e: any) {
     if (e.value == 'Yes') {
@@ -75,7 +66,6 @@ export class RegisterComponent {
     }
   }
 
-
   notice(e: any) {
     if (e.value == 'Yes') {
       this.Notice = true;
@@ -84,20 +74,26 @@ export class RegisterComponent {
     }
   }
 
-  cv_name:string;
+  cv_name: string;
+  file: File;
+  blob: Blob;
+  url: string;
   cv_upload(e: any) {
-    console.log(e)
-    // this.cv_name=e.target.files[0].name;
+    console.log(e.target.files[0]);
+    this.file = e.target.files[0];
+    this.cv_name = e.target.files[0].name;
+    this.blob = new Blob([this.file]);
+    this.url = URL.createObjectURL(this.blob);
+    console.log(this.url);
+    //$(this).attr({ download: this.cv_name, href: this.url });
   }
 
-  photo:string;
-  pic_upload(e:any){
-    this.photo=e.target.files[0].name;
+  photo: string;
+  pic_upload(e: any) {
+    this.photo = e.target.files[0].name;
   }
-
 
   preferedjob: string[] = [];
-
 
   form1() {
     if (this.firstFormGroup.value.Instructional_Designer) {
@@ -118,15 +114,15 @@ export class RegisterComponent {
       portfolio: this.firstFormGroup.value.portfolio as string,
       preferedjob: this.preferedjob,
       emailupadtes: this.firstFormGroup.value.update as boolean,
-      cv:this.cv_name,
-      photo:this.photo
+      cv: this.cv_name,
+      photo: this.photo,
     };
+    console.log(this.personal_info);
   }
 
-
-  form2(){
-    var dis = document.querySelector("#disabled");
-    console.log(dis)
+  form2() {
+    var dis = document.querySelector('#disabled');
+    console.log(dis);
     dis!.classList.remove('disabled');
   }
 }
