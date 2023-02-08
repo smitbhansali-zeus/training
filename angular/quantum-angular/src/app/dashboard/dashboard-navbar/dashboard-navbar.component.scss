@@ -1,0 +1,24 @@
+.navbar {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.52)),
+    url("../../../assets/img/header\ pattern\ svg.svg");
+  border-bottom: 2px solid #31b9e4;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  padding: 11px 15px;
+}
+
+.profile-btn {
+  margin: 11px 15px;
+  padding: 10px 14px;
+  background-color: rgba(60, 78, 98, 1);
+  border: 2px solid rgba(63, 210, 139, 1);
+  border-radius: 100%;
+}
+
+.profile-btn-text {
+  color: rgba(255, 255, 255, 1);
+  font-size: 16px;
+}

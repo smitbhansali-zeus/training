@@ -1,0 +1,35 @@
+<div class="dashboard-card">
+    <span class="card-badge" [ngClass]="{'vanish': checker(job.end_date) }">Expires in 5 days</span>
+    <mat-card>
+        <mat-card-header>
+            <mat-card-title class="card-title">{{job.title}}</mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="card-light-text">Date & Time :</mat-card-content>
+        <mat-card-content class="card-dark-text card-dnt-place">
+            <span class="card-dnt-text">{{job.start_date}} to {{job.end_date}}</span>
+            <mat-divider [vertical]="true"></mat-divider>
+            <span class="card-location-text">
+                <img src="../../../assets/img/location_on_black_24dp.svg" alt="location-icon" class="location-img">
+                {{job.location}}
+            </span>
+        </mat-card-content>
+        <mat-card-content class="card-divider"><mat-divider></mat-divider></mat-card-content>
+        <mat-card-content class="card-light-text">Job Roles :</mat-card-content>
+        <mat-card-content class="card-dark-text">
+            <div class="job-roles">
+                <div class="job-role" *ngFor="let jobrole of job.job_roles">
+                    <img src="../../../assets/img/Instructional Designer.svg" alt="job-role-logo" class="job-role-logo">
+                    {{jobrole}}
+                </div>
+                <mat-divider [vertical]="true"></mat-divider>
+            </div>
+        </mat-card-content>
+        <mat-card-content
+            [ngClass]="{'vanish': job.student_branch === 'all','card-dark-text': job.student_branch !== 'all'}">
+            <p class=" students-criteria">Internship Opportunity for {{job.student_branch}} Students</p>
+        </mat-card-content>
+        <mat-card-actions>
+            <button mat-button class="card-btn">VIEW MORE DETAILS</button>
+        </mat-card-actions>
+    </mat-card>
+</div>

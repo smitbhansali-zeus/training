@@ -21,7 +21,8 @@
             <mat-label>Phone Number</mat-label>
             <span matPrefix>+ <span class="border-bottom">91</span> &nbsp;</span>
             <input type="tel" maxlength="10" matInput formControlName="phone" required /> </mat-form-field><br />
-          <input type="file" class="file" formControlName="cv" (change)="cv_upload($event)" #fileInput hidden required />
+          <input type="file" class="file" formControlName="cv" (change)="cv_upload($event)" #fileInput hidden
+            required />
           <p class="center start" (click)="fileInput.click()">
             <img src="../../assets/img/Upload_black_24dp.svg" alt="" /> UPLOAD
             RESUME
@@ -45,7 +46,7 @@
           <mat-form-field appearance="fill">
             <mat-label>If You Are Registering Via A Referral, Please Mention Full Name
               Of The Employee Who Referred You</mat-label>
-            <input type="text" matInput formControlName="referal"/>
+            <input type="text" matInput formControlName="referal" />
           </mat-form-field>
           <div class="update">
             <p>
@@ -55,7 +56,8 @@
         </div>
         <div class="right">
           <div class="profile"></div>
-          <input type="file" class="file" formControlName="profile" accept=".png,.jpg,.jpeg,.pdf" ((change))="pic_upload($event)" #userp hidden required />
+          <input type="file" class="file" formControlName="profile" accept=".png,.jpg,.jpeg,.pdf"
+            ((change))="pic_upload($event)" #userp hidden required />
           <p (click)="userp.click()">UPLOAD DISPLAY PICTURE</p>
           <p class="instruction">Max. image size: 5 MB</p>
         </div>
@@ -153,7 +155,7 @@
         </div>
         <mat-form-field appearance="fill">
           <mat-label>If others, please mention</mat-label>
-          <input matInput formControlName="other_tech"/>
+          <input matInput formControlName="other_tech" />
         </mat-form-field><br>
         <label class="fs12">Have You Appeared For Any Test By Zeus in the past 12 months?*</label><br>
         <mat-radio-group>
@@ -166,21 +168,21 @@
         </mat-radio-group><br>
         <mat-form-field appearance="fill" class="last" *ngIf="appear">
           <mat-label>If Yes, which role did you apply for?</mat-label>
-          <input matInput formControlName="role"/>
+          <input matInput formControlName="role" />
         </mat-form-field>
       </div>
       <div class="experienced" *ngIf="personal == 'Experienced'">
         <mat-form-field appearance="fill">
           <mat-label>Years of Experience</mat-label>
-          <input matInput formControlName="experience" required/>
+          <input matInput formControlName="experience" required />
         </mat-form-field><br>
         <mat-form-field appearance="fill">
           <mat-label>Current CTC (In Rupees)</mat-label>
-          <input matInput formControlName="c_CTC" required/>
+          <input matInput formControlName="c_CTC" required />
         </mat-form-field><br>
         <mat-form-field appearance="fill">
           <mat-label>Expected CTC (In Rupees)</mat-label>
-          <input matInput formControlName="e_CTC" required/>
+          <input matInput formControlName="e_CTC" required />
         </mat-form-field><br>
         <div class="checkbox">
           <mat-label>Select All The Technologies You Are Expertise In*</mat-label>
@@ -202,7 +204,7 @@
         </div>
         <mat-form-field appearance="fill">
           <mat-label>If others, please mention</mat-label>
-          <input matInput formControlName="other_tech"/>
+          <input matInput formControlName="other_tech" />
         </mat-form-field><br>
         <div class="checkbox">
           <mat-label>Select All The Technologies You Are Familiar In</mat-label>
@@ -224,7 +226,7 @@
         </div>
         <mat-form-field appearance="fill">
           <mat-label>If others, please mention</mat-label>
-          <input matInput formControlName="other_tech"/>
+          <input matInput formControlName="other_tech" />
         </mat-form-field><br>
         <label class="fs12">Are you currently on notice period?*</label><br>
         <mat-radio-group>
@@ -245,7 +247,7 @@
           <mat-form-field appearance="fill">
             <mat-label>How long is your notice period?* (Mention in months)</mat-label>
             <mat-select required>
-              <mat-option *ngFor="let month of months;"value="{{month}}-month">{{month}} month</mat-option>
+              <mat-option *ngFor="let month of months;" value="{{month}}-month">{{month}} month</mat-option>
             </mat-select> </mat-form-field>
         </div>
         <label class="fs12">Have You Appeared For Any Test By Zeus in the past 12 months?*</label><br>
@@ -259,7 +261,7 @@
         </mat-radio-group><br>
         <mat-form-field appearance="fill" class="last mdc-50">
           <mat-label>If Yes, which role did you apply for?</mat-label>
-          <input matInput formControlName="role"/>
+          <input matInput formControlName="role" />
         </mat-form-field>
       </div>
       <div class="center">

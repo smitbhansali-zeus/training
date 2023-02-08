@@ -1,1 +1,6 @@
-<p>dashboard works!</p>
+<div class="dashboard">
+    <app-dashboard-navbar></app-dashboard-navbar>
+    <div *ngFor="let job of jobs">
+        <app-dashboard-card [job]="job"></app-dashboard-card>
+    </div>
+</div>

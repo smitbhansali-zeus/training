@@ -1,0 +1,105 @@
+.dashboard-card {
+  margin: 33px 24px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.24);
+}
+
+.card-title {
+  font-size: 18px;
+  color: rgba(31, 122, 84, 1);
+  font-family: inherit;
+}
+
+.card-light-text {
+  font-size: 12px;
+  color: rgba(102, 102, 102, 1);
+  margin: 16px 0px 0px 0px;
+}
+
+.card-dark-text {
+  font-size: 14px;
+  color: rgba(34, 34, 34, 1);
+  margin-top: 8px;
+}
+
+.card-dnt-place {
+  display: flex;
+}
+
+.card-dnt-text {
+  margin-right: 10px;
+}
+
+.card-location-text {
+  color: rgba(102, 102, 102, 1);
+  font-size: 12px;
+  margin-left: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.location-img {
+  width: 20%;
+}
+
+.card-divider {
+  margin-top: 16px;
+}
+
+.job-roles {
+  display: flex;
+}
+
+.job-role {
+  display: flex;
+  align-items: center;
+  margin: 0px 8px;
+}
+
+.job-role-logo {
+  border: 1px solid rgba(34, 34, 34, 1);
+  border-radius: 50%;
+  padding: 2px;
+  margin-right: 10px;
+}
+
+.students-criteria {
+  font-size: 10px;
+  padding: 3px 8px;
+  background-color: rgba(238, 221, 107, 1);
+  border-radius: 9px;
+  width: fit-content;
+  margin-top: 16px;
+}
+
+.mdc-card__actions {
+  justify-content: center;
+}
+
+.card-btn {
+  cursor: pointer;
+  margin: 24px 0px 16px 0px;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.24);
+  padding: 5px 16px;
+  background-color: rgba(63, 210, 139, 1);
+  border-radius: 2px;
+  color: rgba(37, 49, 63, 1);
+  border: none;
+  font-size: 14px;
+  font-family: inherit;
+}
+
+.card-badge {
+  position: absolute;
+  color: rgba(209, 1, 7, 1);
+  font-size: 12px;
+  background-color: rgba(255, 228, 230, 1);
+  border-radius: 2px;
+  padding: 2px 8px;
+  width: fit-content;
+  z-index: 1;
+  margin: -10px 0px 0px 82%;
+}
+
+.vanish{
+  display: none;
+}
